@@ -19,4 +19,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it on the browser.
 - Open other terminal run `mongod`
 
 Open API URL on [http://localhost:4000/api](http://localhost:4000/api)# react-multiple-files-upload
-# react-multiple-files-upload
