@@ -1,22 +1,22 @@
 {
-  "name": "react-file-upload",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.19.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.7.0",
-    "multer": "^1.4.2",
-    "uuid": "^3.3.3"
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "multer": "^1.4.4",
+    "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.2"
+    "nodemon": "^2.0.15"
   }
 }
