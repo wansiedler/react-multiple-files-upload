@@ -10,7 +10,7 @@ export default class FilesUploadComponent extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            imgCollection: ''
+            imgCollection: []
         }
     }
 
@@ -22,12 +22,17 @@ export default class FilesUploadComponent extends Component {
         e.preventDefault()
 
         var formData = new FormData();
+
         for (const key of Object.keys(this.state.imgCollection)) {
-            formData.append('imgCollection', this.state.imgCollection[key])
+            formData.append('files', this.state.imgCollection[key])
         }
-        axios.post("http://localhost:4000/api/upload-images", formData, {
+        this.state.imgCollection.length && formData.append('image', this.state.imgCollection[0])
+        // axios.post("https://abx-ems.staging.ippen.space/s3/experiments/aaazset-the-experiment-name", formData, {
+        axios.post("https://uiwibff.staging.ippen.space/widgetimages/aaazset-the-experiment-name", formData, {
         }).then(res => {
             console.log(res.data)
+        }).catch(res => {
+            console.log(res)
         })
     }
 
